@@ -74,7 +74,7 @@ void serve_order()
     }
     else
     {
-        printf("\nBefore Please order any food.\n");
+        printf("\nPlease Order first.\n");
     }
 }
 void display()
@@ -85,21 +85,23 @@ void display()
 }
 int main()
 {
+    printf("*-*-Welcome our Restaurant-*-*\n");
     while(1)
     {
         printf("\n  ***Food Order***\n");
-        printf("--------------------\n");
+        printf("*-------------------\n");
         printf("    1. Place Order\n");
         printf("    2. Serve Order\n");
         printf("    3. Display Order\n");
         printf("    4. Exit\n");
+        printf("-------------------*\n");
 
         int choice,x;
         printf("Enter your Choice: ");
         scanf("%d",&choice);
         if(choice==4)
         {
-            printf("\nThank you\n");
+            printf("\nThank you. Will come again.\n");
             break;
         }
         else if(choice==1)
